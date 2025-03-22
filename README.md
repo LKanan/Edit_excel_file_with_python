@@ -15,5 +15,6 @@ table = openpyxl.load_workbook("file_name.xlsx")
 sheet = table.active
 # To iterate over the rows
 for row in sheet.iter_rows():
-    create_png_qr_code_with_logo_inside(row[0].value.upper(), row[1].value.upper(), row[2].value.upper(), logo)
+    row0 = row[0].value
+    row1 = row[1].value
 ```
